@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Básico </title>
+
+    <link rel="stylesheet" href="Styles.css">
+
+</head>
+<body>
+
+    <h1> FORMULARIO BASICO HTML</h1>
+
+    <form action="/submit" method="post">
+        <h1>Registro</h1>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" max="120">
+        
+        <label for="pais">País:</label>
+        <select id="pais" name="pais">
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+            <option value="argentina">Argentina</option>
+            <option value="espana">España</option>
+        </select>
+        
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro</label>
+        
+        <br><br>
+        
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Restablecer</button>
+        <button type="button" onclick="location.href='https://www.google.com';">Visitar Google</button>
+    </form>
+
+</body>
+</html>
+
